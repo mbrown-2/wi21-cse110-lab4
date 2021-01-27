@@ -109,3 +109,24 @@ These operators represent loose equality and strict equality. Loose equality con
 
 ## Conditionals
 
+17) The conditional statement will print 'How are you?' The first statement evaluates both operands as numbers since both are of different types. The numeric representation of true is 1 in which 2 != 1. The second statement evaluates to true in which any number other than 0 will evaluate as true. This is also because false (from boolean to integer logic) evaluates as 0.
+
+--------------------------------------------
+
+## Loops
+
+18)
+
+--------------------------------------------
+
+## Functions
+
+19)
+
+--------------------------------------------
+
+## setInterval(), setTimeout(), clearTimeout()
+
+20)
+
+21)
