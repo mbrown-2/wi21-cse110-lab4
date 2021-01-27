@@ -1,4 +1,4 @@
-Answers to Part 1 questions.
+### Variables & Scoping
 
 1) **What will happen at line 11 and why?**
 
@@ -38,8 +38,32 @@ Answers to Part 1 questions.
 
 9) **What will happen at line 11 and why?**
 
+  On line 11, an error will occur. i is defined by <em>let</em> in which the scope of the variable is within the for-loop only, not the entire function.
+
 10) **What will happen at line 12 and why?**
 
+  On line 12, an error also occurs. Similarly to <em>let</em>, variables declared with the <em>const</em> keyword are also block scoped. In this case, we cannot retrieve discountedPrice as it is within a for-loop.
+  
 11) **What will happen at line 13 and why?**
 
+  On line 13, an error will also occur. For each iteration of the for-loop, the function attempts to change the value of finalPrice despite that the variable was const and initialized as 0.
+
 12) **What will the function return for discountPrices([100,200,300], .5)**
+
+  The function will return an error. The for-loop attempts to push new values to the discounted array although it was originally initialized constant as an empty array. 
+  
+--------------------------------------------
+
+### Data Types
+
+13a) student.name
+13b) student['Grad Year']
+13c) student.greeting()
+13d) student['Favorite Teacher'].name
+13e) student.courseLoad[0]
+
+--------------------------------------------
+
+### Basic Operators & Type Conversion
+
+
