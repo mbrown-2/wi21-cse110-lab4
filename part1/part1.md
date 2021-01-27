@@ -115,7 +115,7 @@ These operators represent loose equality and strict equality. Loose equality con
 
 ## Loops
 
-18)
+18) see part1-question18.js
 
 --------------------------------------------
 
