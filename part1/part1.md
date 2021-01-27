@@ -1,4 +1,4 @@
-### Variables & Scoping
+## Variables & Scoping
 
 1) **What will happen at line 11 and why?**
 
@@ -54,16 +54,58 @@
   
 --------------------------------------------
 
-### Data Types
+## Data Types
 
 13a) student.name
+
 13b) student['Grad Year']
+
 13c) student.greeting()
+
 13d) student['Favorite Teacher'].name
+
 13e) student.courseLoad[0]
+
 
 --------------------------------------------
 
-### Basic Operators & Type Conversion
+## Basic Operators & Type Conversion
 
+### Arithmetic
+14a) 32
+
+14b) 1
+
+14c) 3
+
+14d) 3null
+
+14e) 4
+
+14f) 0
+
+14g) 3undefined
+
+14h) NaN
+
+### Comparison
+15a) true
+
+15b) false
+
+15c) true
+
+15d) false
+
+15e) false
+
+15f) true
+
+16) Explain the difference between the == and === operators.
+
+These operators represent loose equality and strict equality. Loose equality converts both operands to a (even those of different types) to numbers then compares. On the other hand, strict equality immediatly returns false if both operands are of different types.
+
+--------------------------------------------
+
+## Conditionals
 
