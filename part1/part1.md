@@ -115,18 +115,24 @@ These operators represent loose equality and strict equality. Loose equality con
 
 ## Loops
 
-18) see part1-question18.js
+18) See part1-question18.js
 
 --------------------------------------------
 
 ## Functions
 
-19) 
+19) The "callback" keyword allows our functions to synchronously call other functions withouot relying on the order of their declarations in our code.
+
+When calling **modifyArray([1,2,3]**, doSomething), a new array is declared in which for each element of the input array, doSomething will be called. An additional function called "function(x)" is called as input for doSomething's second parameter under callback.
+
+In other words, we execute doSomething(array[i], function(array[i] + 2)) for all elements i of the input array. Each number is therefore incremented by 2 and doubled before being pushed.
+
+Our final answer is [6, 8, 10].
 
 --------------------------------------------
 
 ## setInterval(), setTimeout(), clearTimeout()
 
-20)
+20) See part1-question20.js
 
-21)
+21) 1, 3, 2 (note that these values are logged on individual lines with 1 being the first number logged to console)
