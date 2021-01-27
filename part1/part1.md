@@ -42,15 +42,15 @@
 
 10) **What will happen at line 12 and why?**
 
-  On line 12, an error also occurs. Similarly to <em>let</em>, variables declared with the <em>const</em> keyword are also block scoped. In this case, we cannot retrieve discountedPrice as it is within a for-loop.
+  On line 12, the last iteration of discountedPrice from the for-loop will be returned. Although the variable is defined as const, it is technically not being re-assigned/re-declared to the same variable. For every loop, a whole new const variable is created with only the same name. We would instead have issues if const discountedPrice was defined before the for-loop in which line 6 contained "discountedPrice = ..." Here, the issue would occur since we are directly trying to re-assign a value to teh same const variable.
   
 11) **What will happen at line 13 and why?**
 
-  On line 13, an error will also occur. For each iteration of the for-loop, the function attempts to change the value of finalPrice despite that the variable was const and initialized as 0.
+  On line 13, the last iteration of finalPrice will be returned. For each iteration of the for-loop, the next value of the given array of prices is processed. As the loop concludes, the last element of the array is calculated for finalPrice as it is no longer re-written.
 
 12) **What will the function return for discountPrices([100,200,300], .5)**
 
-  The function will return an error. The for-loop attempts to push new values to the discounted array although it was originally initialized constant as an empty array. 
+  The function will return [50, 100, 150]. This occurs becuase we push finalPrice to teh discounted array for every iteration of the for-loop. Take note that we are not re-writing nor re-declaring discounted as it is a const array. We are instead simply appending to the list that this constant is pointing to.
   
 --------------------------------------------
 
@@ -121,7 +121,7 @@ These operators represent loose equality and strict equality. Loose equality con
 
 ## Functions
 
-19)
+19) 
 
 --------------------------------------------
 
